@@ -1,0 +1,307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"mar",
+				"margin-right\tproperty"
+			],
+			[
+				"tra",
+				"translateY()\ttransform"
+			],
+			[
+				"trans",
+				"transform\tproperty"
+			],
+			[
+				"padd",
+				"padding-bottom\tproperty"
+			],
+			[
+				"margi",
+				"margin\tproperty"
+			],
+			[
+				"font",
+				"font-weight\tproperty"
+			],
+			[
+				"marg",
+				"margin\tproperty"
+			],
+			[
+				"text",
+				"text-transform\tproperty"
+			],
+			[
+				"column",
+				"column-count\tproperty"
+			],
+			[
+				"colum",
+				"column-gap\tproperty"
+			],
+			[
+				"colu",
+				"column-count\tproperty"
+			],
+			[
+				"h",
+				"https"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"background",
+				"background\tproperty"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"paddi",
+				"padding-left\tproperty"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"wi",
+				"border-image-width\tproperty"
+			],
+			[
+				"c",
+				"cover\tbackground-size"
+			],
+			[
+				"size",
+				"background-size\tproperty"
+			],
+			[
+				"backgr",
+				"background-size\tproperty"
+			],
+			[
+				"hero",
+				"hero-slika"
+			],
+			[
+				"fo",
+				"font-variant\tproperty"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"paddin",
+				"padding-bottom\tproperty"
+			],
+			[
+				"padding",
+				"padding-left\tproperty"
+			],
+			[
+				"fot",
+				"font-size\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Korisnik/Desktop/Kurs/HTML, CSS/FromZeroToHero-master/cas-2/img/Untitled-2.png",
+		"/C/Users/Korisnik/Desktop/Kurs/HTML, CSS/FromZeroToHero-master (1)/FromZeroToHero-master/cas-1/index.html",
+		"/C/Users/Korisnik/Desktop/Kurs/HTML, CSS/FromZeroToHero-master (1)/FromZeroToHero-master/cas-1/css/main.css",
+		"/C/Users/Korisnik/Desktop/Kurs/HTML, CSS/Nekretnine Kotur/index.html",
+		"/C/Users/Korisnik/Desktop/Kurs/HTML, CSS/Nekretnine Kotur/css/main.css",
+		"/C/Users/Korisnik/Desktop/Kurs/HTML, CSS/Nekretnine Kotur/img/hero-slika.png",
+		"/C/Users/Korisnik/Desktop/Kurs/HTML, CSS/Nekretnine Kotur/img/nekretnine-logo.png",
+		"/C/Users/Korisnik/Desktop/Kurs/HTML, CSS/Nekretnine Kotur/css/normalize.css",
+		"/C/Users/Korisnik/Desktop/Kurs/HTML, CSS/FromZeroToHero-master (1)/Nekretnine Kotur/css/main.css",
+		"/C/Users/Korisnik/Desktop/Kurs/HTML, CSS/FromZeroToHero-master (1)/Nekretnine Kotur/js/index.html",
+		"/C/Users/Korisnik/Desktop/Kurs/HTML, CSS/FromZeroToHero-master (1)/FromZeroToHero-master/cas-1/img/papas-logo.png"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

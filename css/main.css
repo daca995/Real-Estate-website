@@ -1,0 +1,1746 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0px;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.5%;
+    font-weight: 300;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section{
+    margin-top: 7%;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5 {
+     font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 5em;
+    font-weight: 600;
+    padding-top: 15px;
+    margin-bottom: -15px;
+}
+h2{
+    font-weight: 600;
+    font-size: 4em;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: left;
+    position: relative;
+}
+
+h2 span::after {
+    content: '';
+    position: absolute;
+    width: 341px;
+    height: 5px;
+    margin-top: 67px;
+    margin-left: -337px;
+    background-color: #cc3333;
+}
+
+
+h5 {
+    font-weight: 700;
+    font-size: 2.3em;
+    margin-top: 25px;
+    margin-bottom: -10px;
+    text-align: center;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1366px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.container-second{
+    max-width: 1366px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin: 0 auto;
+}
+
+
+.btn {
+    font-weight: 600;
+    font-size: 1.6em;
+    color: #000;
+    background: #cc3333;
+    padding: 6px 27px;   
+}
+
+.btn:hover {
+    background: #990000;
+}
+
+ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+
+small {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+
+/* ======== HEADER ========== */
+
+header {
+    padding: 15px;
+}
+
+nav {
+    padding-top: 10px;
+    display:  none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;  
+    text-align: center;
+    color: #000;
+}
+
+nav ul {
+    vertical-align: middle;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav a {
+    color: #cc3333;
+    font-size: 2.5em; 
+    line-height: 70px;
+    padding: 5px 10px;
+}
+
+nav .btn {
+    background: #fff;
+    font-size: 2.5em;
+    color: #cc3333;
+    font-weight: 300;
+}
+
+
+nav .close,
+.close {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    margin: 0;
+}
+
+nav .close span,
+.close span {
+    width: 35px;
+    height: 2px;
+    background: #000;
+    display: block;
+    transform: rotate(45deg);
+}
+
+nav .close span:nth-child(2),
+.close span:nth-child(2){
+    transform: rotate(-45deg);
+    position: relative;
+    top: -2px;
+}
+
+
+.header-logo {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.burger {
+    width: 44px;
+    height: 25px;
+    padding: 5px 0;
+    float: right;
+    margin-top: 12px;
+    background-color: white;
+}
+
+.burger span {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin-top: 9px;
+}  
+
+.burger span:nth-child(1) {
+    margin-top: 0;
+}
+
+.burger span:hover{
+    cursor: pointer;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #cc3333;
+  color: #fff;
+  border:none;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 600;
+  padding: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hero-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hero-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hero-btn:hover span {
+  padding-right: 25px;
+}
+
+.hero-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.hero-btn:hover {
+    background: #990000;
+}
+
+.hero {
+    background-image: url('../img/hero-slika1.png');
+    background-repeat: no-repeat;
+    height: 520px;
+    width: auto;
+    position: relative;
+    background-position: 20%;
+
+}
+
+.hero p {
+    font-size: 3.8em;
+    font-weight: 300;
+}
+
+.color-overlay{
+    width:100%;
+    height: 100%;
+    background: #000000;
+    opacity: .68;
+    position: absolute;
+}
+
+.hero-text {
+    padding: 2px 30px;
+    color: #fff;
+    position: absolute;
+     max-width: 95%;
+    
+}
+
+/* ======== HEADER END ========== */
+
+
+/* ======== PONUDA ========== */
+
+.ponuda h2 span::after{
+    width: 365px;
+    margin-left: -364px;
+}
+
+.ponuda p{
+    color: #333333;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 25px;
+}
+
+.ponuda .row{
+    margin-top: 15px;
+}
+
+.vl{
+  border-left: 1px solid #cc3333;
+  height: 20px;
+  margin-top: 23px;
+}
+ 
+.ponuda h5{
+    text-align: left;
+    color: #333;
+    font-size: 2.6em;
+}
+
+.ponuda .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ponuda .text p{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.wrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 6%;
+    height: 0;
+}
+
+video{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    border: 7px solid #333;
+}
+
+/* ======== PONUDA KRAJ ========== */
+
+
+/* ======== REFERENCE ========== */
+
+.reference h2 span::after{
+    width: 196px ;
+    margin-left: -194px;
+}
+
+.reference #rect{
+    border: 0.5px solid #3b3333;
+    outline: auto;
+    border-color:rgba(59,51,51, 0.1);  
+    padding: 6px;
+    position: relative;
+    margin-top: 10px;
+    box-shadow: 10px 10px 20px #ccc;
+    height: 400px;
+    /*background-color: #f2f2f2;*/
+}
+
+.reference h5{
+    font-size: 1.8em;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.reference #text{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: left;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.flexslider .slides{
+    padding-bottom: 30px;
+}
+
+/* ======== REFERENCE KRAJ ========== */
+
+
+/* ======== ENTERIJER ========== */
+
+.enterijer li {
+    height: 0;
+    padding-bottom: 56.25%; 
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.enterijer .unstyle-list{
+    padding-top: 10px;
+}
+
+.enterijer h2 span::after{
+    width: 328px;
+    margin-left: -330px;
+}
+
+.enterijer img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+/* ======== ENTERIJER KRAJ  ========== */
+
+
+/* ======== O NAMA ========== */
+.o-nama{
+    position: relative;
+    z-index: 1;
+    padding-top: 7px;
+    padding-bottom: 15px;
+}
+
+.o-nama:before {
+    background-image: url('../img/o-nama.png');
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    opacity: .25;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: 28%;
+    max-height: initial;
+}
+
+.o-nama h2 span::after{
+    width: 149px;
+    margin-left: -151px;
+}
+
+.column{
+    float: left;
+}
+
+.btn-primary{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.6em;
+    display: block;
+    color: #000;
+    padding: 6px 27px;  
+    cursor: pointer;
+}
+
+button{
+    margin: auto;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.o-nama h5{
+    text-align: left;
+    font-size: 2em;
+}
+
+.o-nama p{
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.o-nama p:last-of-type{
+    font-size: 2.8em;
+    color:#cc3333;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 35px;
+}
+
+.o-nama li {
+    font-size: 1.8em;
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+
+.o-nama li::before {
+    content: url('../img/icons/checkmark.png');
+    color: #cc3333;
+    display: inline-block;
+    width: 30px;
+    margin-left: -40px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* ======== O NAMA KRAJ ========== */
+
+
+/* ======== DODATAK ========== */
+
+.dodatak p{ 
+    font-weight: 700;
+    font-size: 3em;
+    color: #cc3333;
+    text-align: center;
+    margin:0px;
+    padding-top: 26px;
+}
+
+.dodatak p:nth-child(even){
+    font-weight: 600;
+    font-size: 2em;
+    color: #333333;
+    margin: 0px;
+    padding-top: 8px;
+}
+
+.dodatak .row{
+    text-align: center;
+    display: inline;
+    justify-content: space-evenly;
+}
+
+.dodatak .column{
+    padding: 20px 10px;
+    width: 100%;
+    border: 1px solid #333333;
+    border-bottom: none;
+}
+
+.dodatak .column:nth-child(4){
+    border-bottom: 1px solid #333333;
+}
+
+/* ======== DODATAK KRAJ ========== */
+
+
+/* ======== UTISCI ========== */
+
+#utisci{
+    text-align: center;
+}
+
+.utisci h2 span::after{
+    width: 229px;
+    margin-left: -227px;
+}
+
+.utisci img{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.utisci p{
+    font-weight: 300;
+    color: #333;
+    font-size: 1.4em;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.utisci p:nth-child(odd){
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: -18px;
+}
+
+.utisci .flex-control-nav{
+    display: none;
+}
+
+.utisci .flex-direction-nav{
+    display: none;
+}
+
+
+/* ======== UTISCI KRAJ ========== */
+
+
+/* ======== INVESTIRAJTE ========== */
+
+.investirajte{
+    background-image: url('../img/investirajte.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 21%;
+    margin-top: 0%;
+
+}
+
+.investirajte .text{
+    text-align: center;
+    position: relative;
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+.investirajte p{
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 25px;
+    margin:0px;
+}
+
+.investirajte .color-overlay{
+    opacity: .40;
+}
+
+.investirajte p:first-of-type{
+    font-size: 2.6em;
+    padding-top: 30px;
+    margin:0px;
+    padding-bottom: 15px;
+}
+
+.investirajte a{
+    margin-bottom: 40px;
+}
+
+/* ======== INVESTIRAJTE KRAJ ========== */
+
+
+/* ======== FOOTER ========== */
+
+footer{
+    margin-top: 0%;
+}
+
+footer{
+    background-color: #ccc;
+}
+
+.footer_1{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 55px;
+}
+
+.wrap{
+    padding: 23px;
+}
+
+.footer_1 .rectangle{
+    height: 255px;
+    background-color: white;
+    margin: 0px;
+    width: 240px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    margin-right: 27px;
+    box-shadow: 27px -27px 0px 0px #cc3333;
+}
+
+.footer_1 img{
+    padding-top:20px;
+}
+
+.footer_1 p:first-of-type{
+    font-weight: 600;
+    font-size: 2em;
+    color: #000;
+}
+ 
+.footer_1 p{
+    font-weight: 300;
+    font-size: 1.6em;
+    color: #000;
+}
+
+.footer_2 {
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer_2 ul {
+    padding-top: 20px;
+}
+
+.footer_2 li a {
+    color: #000;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.footer_2 li a:hover {
+    color: #cc3333;
+}
+
+.footer_2 ul{
+    display: inline;
+    float: right;
+    position: initial;
+    width: auto;
+    height: auto;
+    max-width: 80%;
+}
+
+.footer_2 li{
+    float: left;
+    padding-top: 0px;
+    padding: 11% 0%;
+}
+
+.logo-copy-wrap small {
+    display: block; 
+}
+
+.footer_2 img{
+    max-width: 80px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+footer hr{
+    border-top: 1px solid;
+}
+
+/* ======== FOOTER KRAJ ========== */
+
+
+/* ======== BACK ========== */
+
+.back {
+    border: 1px solid ;
+    border-color: #c22222;
+    border-radius: 15%;
+    background-color: transparent;
+    padding: 10px 4px;
+    right: 15px;
+    bottom: 15%;
+    transition: border-color .3s, opacity .3s, visibility .3s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.back:active {
+  border-color: #cc3333;
+}
+
+.back.show {
+  opacity: .5;
+  visibility: visible;
+}
+
+.back:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* ======== BACK ========== */
+
+
+/* ======== MODAL  ========== */
+
+.modal {
+    z-index: 1;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+}
+
+.modal.open {
+    display: block;
+}
+
+.modal-wrap {
+    max-width: 1080px;
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    overflow-y: auto;
+    border: 10px solid #ccc;
+    text-align: center;
+}
+
+.modal-wrap .close span {
+    background-color: #000;
+}
+
+.modal-inner{
+    padding-bottom: 30px;
+}
+
+legend {
+    font-size: 2.8em;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    color: #000;
+    display: block;
+}
+
+input,textarea{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+
+}
+
+textarea{
+    height: 162px;
+}
+
+input::placeholder,textarea::placeholder {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: left;
+}
+
+input:focus,textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+input.btn {
+    max-width: 300px;
+    padding: 13px 15px;
+    color: #fff;
+}
+
+.modal iframe{
+     border: 2px solid #ccc;
+     max-width: 100%;
+}
+
+.kontakt_1, .kontakt_2{  
+    border: 2px solid #ccc;
+    text-align: center;
+    float: right;
+    width: 100%;
+    border-top: none;
+    height: 47px;
+}
+
+.modal p{
+    font-weight: 600;
+    color: #000;
+    padding-left: 5px;
+    font-size: 1.2em;
+}
+
+.kontakt_1 img, .kontakt_2 img{
+    padding: 6px;
+}
+
+/* ======== MODAL KRAJ  ========== */
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+    /* ======== UTISCI ========== */
+
+    .utisci p{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 1.8em;
+    }
+
+    /* ======== UTISCI KRAJ ========== */
+    
+    /* ======== FOOTER ========== */
+
+    .footer_1 .rectangle{
+        max-width: 100%;
+    }
+
+    .footer_2 li a{
+        font-size: 1.5em;
+        padding-top: 10px;
+    }
+
+    /* ======== FOOTER KRAJ ========== */
+
+}
+
+@media only screen and (max-width: 480px){
+
+    /* ======== HEADER ========== */
+
+    .hero{
+        height: 500px;
+        background-position: 18%;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+
+    /* ======== HEADER KRAJ ========== */
+
+    /* ======== PONUDA ========== */
+
+    .ponuda h2 span::after{
+        width: 274px;
+        margin-left: -273px;
+        margin-top: 54px;
+    }
+
+    /* ======== PONUDA KRAJ ========== */
+
+    /* ======== ENTERIJER ========== */
+
+    .enterijer h2 span::after{
+        width: 248px;
+        margin-left: -247px;
+        margin-top: 53px;
+    }
+
+    /* ======== ENTERIJER KRAJ ========== */
+
+    /* ======== UTISCI ========== */
+
+    .utisci h2 span::after{
+        width: 172px;
+        margin-left: -170px;
+        margin-top: 53px;
+    }
+
+    /* ======== UTISCI KRAJ ========== */
+
+    /* ======== REFERENCE ========== */
+
+    .reference h2 span::after{
+        width: 149px ;
+        margin-left: -147px; 
+        margin-top: 53px;
+    }
+
+    /* ======== REFERENCE KRAJ ========== */
+
+    /* ======== O NAMA ========== */
+
+    .o-nama h2 span::after{
+        width: 116px;
+        margin-left: -114px;
+        margin-top: 53px;
+    }
+
+    /* ======== O NAMA KRAJ ========== */
+
+    /* ======== FOOTER ========== */
+
+    .footer_2{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    /* ======== FOOTER KRAJ========== */
+}
+
+@media only screen and (max-width: 600px){
+
+     /* ======== HEADER ========== */
+
+    h1{
+        font-size: 4.2em;
+    }
+
+    .hero p{
+        font-size: 3em;
+    }
+
+    /* ======== HEADER KRAJ ========== */
+
+    /* ======== PONUDA ========== */
+
+    .ponuda .text p{   
+         font-size: 1.7em;
+    }
+
+     /* ======== PONUDA KRAJ ========== */
+}
+
+
+@media only screen and (max-width: 700px){
+
+   
+
+    /* ======== UTISCI ========== */
+
+    .prev, 
+    .next{
+        padding: 0px;
+        margin-top: 0px;
+        font-size: 30px;
+    }
+
+    .flex-direction-nav{
+        display: none;
+    }
+
+    /* ======== UTISCI KRAJ ========== */
+}
+
+@media only screen and (min-width: 768px) {
+
+    section{
+       margin-top: 5.5%;
+    }
+
+    /* ======== HEADER ========== */
+
+    .hero p{
+        font-size: 4em;
+    }
+
+    .hero-text{
+        max-width: 66%;
+    }
+
+    /* ======== HEADER KRAJ ========== */
+
+    /* ======== PONUDA ========== */
+
+    .ponuda p{
+
+      font-size: 1.8em;
+      line-height: 29px;
+    }
+
+    .ponuda h5{
+      font-size: 3em;
+      margin-top: 40px;
+    }
+
+    .ponuda .text{
+        justify-content: space-around;
+    }
+
+    /* ======== PONUDA KRAJ ========== */
+
+    .back{
+      right: 30px;
+    } 
+   
+    /* ======== INVESTIRAJTE ========== */
+
+    .investirajte p{
+        font-size: 3.6em;
+    }
+
+    .investirajte p:first-of-type{
+        font-size: 4em;
+    }
+
+    /* ======== INVESTIRAJTE KRAJ ========== */
+
+    /* ======== ENTERIJER ========== */
+
+    .enterijer li{
+        width: 49%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        padding-bottom: 27.56%; /* 9/16x49 because we have 2 columns*/
+        float: left; 
+    }
+
+    /* ======== ENTERIJER KRAJ ========== */
+
+    /* ======== DODATAK ========== */
+
+    .dodatak .column{
+        width: 25%;
+        border-right: none;
+        border-bottom: 1px solid #333333;
+    }
+
+    .dodatak .row{
+        display: flex;
+    }
+
+    .dodatak .column:nth-child(4){
+        border-right: 1px solid #333333;
+    }
+
+   /* ======== DODATAK KRAJ ========== */
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .hero{
+        background-position: none;
+    }
+
+    h1{
+        font-size: 6em;
+    }
+
+
+    /* ======== REFERENCE ========== */
+
+    .reference #text{
+        font-size: 1.8em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .reference #rect{
+        margin-top: 20px;
+        height: 500px;
+    }
+
+    .reference h5{
+        font-size: 2em;
+        padding-top: 5px;
+    }
+
+    /* ======== REFERENCE KRAJ ========== */
+
+    /* ======== ENTERIJER ========== */
+
+    .enterijer li {
+        width: calc(33.333% - 3px); 
+        padding-bottom: 18.75%; /* 9/16x33.333 because we have 3 columns */
+        margin-right: 3px;
+        margin-bottom: 3px;
+    }
+
+    .enterijer li.height__2 {
+        padding-bottom: calc(37.5% + 3px); /* 9/16x66.666 = 37.5 because picture is spreading in 2 rows */
+    }
+
+    /* ======== ENTERIJER KRAJ ========== */ 
+
+    /* ======== PONUDA ========== */
+
+    .ponuda .column1, 
+    .ponuda .column2{
+        flex: 5%;
+    }
+
+    .ponuda .column1{
+        padding-right: 55px;
+    }
+
+    .ponuda .column2{
+        padding-right: 40px;
+    }
+
+
+    .ponuda .row{
+        display: flex;
+        align-items: center;
+    }
+
+    video{
+         box-shadow: 40px -40px 0px #ccc;
+    }
+
+    /* ======== PONUDA KRAJ ========== */
+
+    /* ======== O NAMA ========== */
+
+    .o-nama{
+        padding-top: 18px;
+        padding-bottom: 40px;
+    }
+
+    .o-nama .column{
+        column-count: 2;
+        column-gap: 55px;
+    }
+
+    /* ======== O NAMA KRAJ ========== */
+
+    /* ======== UTISCI ========== */
+
+    .utisci img{
+        width: 120px;
+        margin-top: 50px;
+    }
+
+    .utisci p{
+        font-size: 2em;
+        line-height: 30px;
+        padding-right: 130px;
+        padding-left: 130px;
+    }
+
+    /* ======== UTISCI KRAJ ========== */
+
+    /* ======== FOOTER ========== */
+
+    .footer_2 li a{
+        font-size: 2em;
+    }
+
+    /* ======== FOOTER KRAJ========== */
+
+    /* ======== MODAL ========== */
+
+    legend{
+        font-size: 3.2em;
+    }
+
+    /* ======== MODAL KRAJ ========== */
+}
+
+@media only screen and (min-width: 986px){
+
+/* ======== MODAL ==========*/
+
+    .modal-inner{
+        display: flex;
+    }
+
+    form {
+        max-width: 590px;
+        margin-right: 10px;
+        text-align: left;
+    }
+
+    input, textarea{
+        margin-right: 10px;
+        margin-left: 10px;
+        width: calc(50% - 22px);
+    }
+
+    input.width__2,
+    input.btn,
+    textarea {
+        width: calc(100% - 22px);
+    }
+
+    fieldset {
+        margin-bottom: 50px;
+    }
+    
+    fieldset:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .modal-wrap {
+        padding: 50px;
+    }
+
+    .modal-logo img{
+        width: 17%;
+    }
+
+    legend {
+        display: inline-table;
+        padding-left: 10px;
+    }
+
+    /* ======== MODAL KRAJ ========== */
+}
+
+@media only screen and (min-width: 1013px){
+
+    /* ======== FOOTER ========== */
+     
+    .footer_2 ul {
+        float: right;
+        padding-top: 0;
+    }
+
+    .footer_2 li {
+        float: left;
+        padding-left: 25px;
+    }
+
+    /* ======== FOOTER KRAJ ========== */
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .container-second{
+        padding-left: 50px;
+        padding-right: 50px
+    }
+
+    /* ======== HEADER ========== */
+
+    .hero-text{
+        max-width: 60%;
+    }
+
+    .hero{
+        background-position: 16%;
+    }
+
+    header {
+        padding: 15px 0px;
+    }
+
+    nav {
+        display: block!important;
+        position: initial;
+        width: auto;
+        height: auto;
+        background: inherit;
+        float: right;
+    }
+
+    nav li {
+        float: left;
+    }
+
+    nav a {
+        color: #000;
+        margin-left: 30px;
+        font-size: 1.8em;
+    }
+
+    nav a:not(.btn).active,
+    nav a:not(.btn):hover {
+        color: #cc3333;
+    }
+
+    nav .btn{
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+
+    nav a
+    nav a.btn {
+        font-size: 1.8em;
+    }
+
+    nav a.btn {
+        color: #fff;
+        background: #cc3333;
+    }
+
+
+    .burger,
+    .nav .close {
+        display: none;
+    }
+    /* ======== HEADER END ========== */
+
+    /* ======== PONUDA ========== */
+
+    .ponuda .text{
+        justify-content: space-between;
+    }
+
+    video{
+        top: -12px;
+    }
+
+    /* ======== PONUDA KRAJ ========== */
+
+    /* ======== O NAMA ========== */
+
+    .o-nama p{
+        font-size: 1.8em;
+        line-height: 29px;
+    }
+
+    .o-nama p:last-of-type{
+        font-size: 3.27em;
+        padding-top: 35px;
+    }
+
+    .o-nama h5{
+        font-size: 2em;
+    }
+
+    th:nth-child(3) {
+        padding-top: 40px;
+    }
+
+    /* ======== O NAMA KRAJ ========== */
+
+    /* ======== FOOTER ========== */
+
+    .footer_1{
+        justify-content: space-between;
+    }
+
+    .footer_1 p{
+        font-size: 1.8em;
+    }
+
+    .footer_1 p:first-of-type{
+        font-size: 2.2em;
+    }
+
+    /* ======== FOOTER KRAJ ========== */
+
+    .back{
+        position: fixed;
+    }
+}
+
+/*Lap Top*/
+@media only screen and (min-width: 1200px) {
+
+    .container-second{
+        padding-left: 100px;
+        padding-right: 100px
+    }
+
+    /* ======== HEADER ========== */
+
+    .hero-text{
+        max-width: 45%;
+    }
+
+    /* ======== HEADER END ========== */
+
+    /* ======== PONUDA ========== */
+
+    video{
+        top: 56px;
+    }
+
+    /* ======== PONUDA KRAJ ========== */
+
+
+
+    /* ======== ENTERIJER ========== */
+
+    .enterijer li a::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.44);
+        background-image: url(../img/icons/zoom-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity .3s ease-in;
+    }
+
+    .enterijer li a:hover::after {
+        opacity: 1;
+        transition: opacity .3s ease-out;   
+    }
+
+    /* ======== ENTERIJER KRAJ ========== */
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.unstyle-list {
+    margin: 0;
+    padding: 0;
+}
+
+unstyle-list li::before {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
