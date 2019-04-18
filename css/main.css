@@ -347,6 +347,7 @@ nav .close span:nth-child(2),
     width: auto;
     position: relative;
     background-position: 20%;
+    background-size: cover;
 
 }
 
@@ -364,7 +365,7 @@ nav .close span:nth-child(2),
 }
 
 .hero-text {
-    padding: 2px 30px;
+    padding: 2px 15px;
     color: #fff;
     position: absolute;
      max-width: 95%;
@@ -686,8 +687,6 @@ button{
     background-size: cover;
     position: relative;
     background-position: 21%;
-    margin-top: 0%;
-
 }
 
 .investirajte .text{
@@ -769,7 +768,8 @@ footer{
     color: #000;
 }
  
-.footer_1 p{
+.footer_1 p,
+.footer_1 a{
     font-weight: 300;
     font-size: 1.6em;
     color: #000;

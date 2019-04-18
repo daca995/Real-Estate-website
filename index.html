@@ -55,11 +55,13 @@
 
   <div class = "hero clearfix">
     <div class = "color-overlay"></div> 
+    <div class = "container">
      <div class = "hero-text">
       <h1> Želite li stan? </h1>
       <p> Riješimo zajedno Vaše stambeno pitanje. </p> 
       <a href ="javascript" class ="hero-btn kontakt" style="vertical-align: middle"><span>Kontaktirajte nas</span></a>
      </div>
+   </div>
    </div>
   </div> 
   
@@ -234,7 +236,7 @@
             
             <li>
             <img src = "img/utisci/klijenti4.png">
-            <p> Naš stan je smješten na par minuta hoda od vrtića, škole, ali i Doma zdravlja što mi je izuzetno važno zbog djece. Okruženje je mirno, a komšije veoma prijatne. Prilikom kupovine stana investitor nam je pomogao u vezi sa dizanjem kredita, i omogućio nam plaćanje u više rata, a i nakon kupovine odgovarao je na svaki naš zahtjev. </p>
+            <p> Naš stan je smješten na par minuta hoda od vrtića i škole što mi je izuzetno važno zbog djece. Okruženje je mirno, a komšije veoma prijatne. Prilikom kupovine stana investitor nam je omogućio plaćanje u više rata, a i nakon kupovine odgovarao je na svaki naš zahtjev. </p>
 
             <p>Jovana Vidović</p><p>Kozarska Dubica</p>
             </li>
@@ -246,10 +248,12 @@
            
     <section class="investirajte">
       <div class = "color-overlay"></div> 
+      <div class ="container">
         <div class = "text"><p>INVESTIRAJTE U KVALITET VAŠEG ŽIVOTA</p>
           <p>Rezervišite svoj stan na vrijeme.</p>
            <a href ="javascript" class ="hero-btn kontakt" style="vertical-align: middle"><span>Kontaktirajte nas</span></a>
         </div> 
+      </div>
     </section>
 
   </main>
@@ -289,7 +293,7 @@
             <img src = "img/icons/e-mail.png">
           <br>
           <p>Email</p>
-          <p>nekretninekotur@teol.net</p>
+          <a href="mailto:nekretninekotur@teol.net">nekretninekotur@teol.net</a>
             </div>
         </div>     
       </div>
@@ -320,10 +324,10 @@
        <div class="modal-inner">
         <form>
           <fieldset>
-            <input type="text" name="ime-prezime" placeholder="Ime i prezime" class="width__2">
-            <input type="email" name="email" placeholder="Email">
-            <input type="number" name="phone-num" placeholder="Broj telefona">
-            <textarea name="message" placeholder="Poruka"></textarea>
+            <input type="text" name="ime-prezime" placeholder="Ime i prezime" class="width__2" required="">
+            <input type="email" name="email" placeholder="Email" required="">
+            <input type="number" name="phone-num" placeholder="Broj telefona" required="">
+            <textarea name="message" placeholder="Poruka" required=""></textarea>
             <input type="submit" value="Pošalji" class="btn">
           </fieldset>
         </form>
